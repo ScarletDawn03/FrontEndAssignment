@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!--Font Awesome CDN-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<title>Kedah</title>
+
+	<link rel="stylesheet" href="./css/autoscroll.css">
+	<link rel="stylesheet" href="./css/state.css">
+	<link rel="stylesheet" href="css/share.css" />
+
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<!-- fonts style -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+	<!-- font wesome stylesheet -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/HP.css" />
+	<link rel="stylesheet" href="css/sidebar.css" />
+
+
+
+</head>
+
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-light">
+		<div class="nav__img"><a href="index.html"><img src="images/mainLogo.jpeg"></a></div>
+		<div id="mySidebar" class="sidebar">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+			<a href="index.html">Home</a>
+			<a href="aboutUs.html">About Us</a>
+			<a href="MalaysiaFood.html">Food</a>
+			<a href="MalaysiaGame.html">Games</a>
+			<a href="MalaysiaHistory.html">History</a>
+			<a href="MalaysiaFestival.html">Festival</a>
+			<a href="Kedah.html">Kedah</a>
+			<a href="Perlis.html">Perlis</a>
+			<a href="Penang.html">Penang</a>
+			<a href="Perak.html">Perak</a>
+			<a href="Terengganu.html">Terengganu</a>
+			<a href="loginPage.html">Login</a>
+		</div>
+
+		<div id="main">
+			<button class="openbtn" onclick="openNav()">☰</button>
+		</div>
+		<div class="collapse navbar-collapse" id="navbarNavDropdown">
+			<ul class="nav__links">
+				<li class="link "><a href="index.html">Home</a></li>
+				<li class="link"><a href="aboutUs.html">About Us</a></li>
+				<li class="link"><a href="MalaysiaFood.html">Food</a></li>
+				<li class="link"><a href="MalaysiaFestival.html">Festival</a></li>
+				<li class="link"><a href="MalaysiaHistory.html">History</a></li>
+				<li class="link"><a href="MalaysiaGame.html">Games</a></li>
+
+				<li class="nav-item dropdown link">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+						aria-haspopup="true" aria-expanded="false">
+						Places
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						<a class="dropdown-item" href="Kedah.html">Kedah</a>
+						<a class="dropdown-item" href="Penang.html">Penang</a>
+						<a class="dropdown-item" href="Perlis.html">Perlis</a>
+						<a class="dropdown-item" href="Perak.html">Perak</a>
+						<a class="dropdown-item" href="Terengganu.html">Terengganu</a>
+					</div>
+				</li>
+				<li class="link"><a href="loginPage.html">Login</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="state-container">
+		<div class="intro-container">
+			<div class="state-image">
+				<img class="img-fluid" src="images/Kedah/Kedah.jpg" alt="Kedah State" />
+			</div>
+			<div class="state-intro">
+				<h1 class="state-header">State of Kedah</h1>
+				Kedah, in northwest Malaysia, is renowned for its lush rice fields and agricultural heritage. Known as
+				the "Rice Bowl" of Malaysia, it features the scenic Langkawi Archipelago with its beautiful beaches and
+				tropical landscapes. The state also offers historical sites and vibrant markets, blending natural beauty
+				with cultural significance.
+			</div>
+		</div>
+	</div>
+
+	<br><br><br>
+
+	<div class="container">
+		<div class="slide">
+			<div class="item" style="background-image: url(images/Kedah/kedah1.jpg);">
+				<div class="content">
+					<div class="name">Langkawi Sky Bridge</div>
+					<div class="des">The Langkawi Sky Bridge is a 125-meter (410 ft) curved pedestrian bridge in
+						Malaysia, completed in 2005. It is located 660 meters (2,170 ft) above sea level on Gunung Mat
+						Cincang.</div>
+					<button data-target="#LangkawiSkyBridge">See More</button>
+				</div>
+			</div>
+
+			<div class="item" style="background-image: url(images/Kedah/kedah2.jpg);">
+				<div class="content">
+					<div class="name">Cenang Beach</div>
+					<div class="des">Cenang Beach in Langkawi, known for its white sand, blue water, and shaded areas,
+						is a central attraction at Pantai Cenang.</div>
+					<button data-target="#CenangBeach">See More</button>
+				</div>
+			</div>
+
+			<div class="item" style="background-image: url(images/Kedah/kedah3.jpg);">
+				<div class="content">
+					<div class="name">Eagle Square</div>
+					<div class="des">Eagle Square, also known as Dataran Lang, stands as an emblem of Langkawi’s
+						majestic beauty and rich cultural heritage.</div>
+					<button data-target="#EagleSquare">See More</button>
+				</div>
+			</div>
+
+			<div class="item" style="background-image: url(images/Kedah/kedah4.jpg);">
+				<div class="content">
+					<div class="name">Wat Lampam</div>
+					<div class="des">Wat Lampam, also known as the White Temple, is located in Alor Setar, Kedah.</div>
+					<button data-target="#WatLampam">See More</button>
+				</div>
+			</div>
+
+			<div class="item" style="background-image: url(images/Kedah/kedah5.jpg);">
+				<div class="content">
+					<div class="name">Alor Setar Tower</div>
+					<div class="des">he Alor Setar Tower, also known as Menara Alor Setar, is a prominent
+						telecommunications and observation tower located in Alor Setar, Kedah, Malaysia.</div>
+					<button data-target="#AlorSetarTower">See More</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="button">
+			<button class="prev"><i class="fa fa-arrow-left"></i></button>
+			<button class="next"><i class="fa fa-arrow-right"></i></button>
+		</div>
+	</div>
+
+	<br><br><br><br>
+
+	<section id="LangkawiSkyBridge">
+		<h1>Langkawi Sky Bridge</h1>
+		<div class="place-description">
+			<div class="image-space">
+				<img src="images/Kedah/kedahSkybridge.jpg" alt="Langkawi Sky Bridge">
+			</div>
+			<div class="description-container">
+				<p>The Langkawi Sky Bridge is a remarkable 125-meter-long pedestrian bridge located on Langkawi Island,
+					Malaysia, suspended 700 meters above sea level at the peak of Gunung Mat Cincang. Accessible via
+					the Langkawi Cable Car, the bridge features a distinctive curved design supported by a single pylon
+					and offers breathtaking panoramic views of the surrounding rainforest, Andaman Sea, and neighboring
+					islands. Its transparent floor sections provide an exhilarating experience and an unobstructed view
+					of the lush landscape below, making it a popular and impressive tourist attraction.</p>
+			</div>
+		</div>
+	</section>
+
+	<section id="CenangBeach">
+		<h1>Cenang Beach</h1>
+		<div class="place-description">
+			<div class="image-space">
+				<img src="images/Kedah/kedahCenang.jpg" alt="Cenang Beach">
+			</div>
+			<div class="description-container">
+				<p>Cenang Beach is a vibrant and popular stretch of coastline on Langkawi Island, Malaysia, known for
+					its
+					lively atmosphere and beautiful sandy shores. The beach offers a picturesque setting with its clear
+					turquoise waters and soft, white sand, ideal for sunbathing and swimming. Lined with numerous
+					restaurants, bars, and shops, Cenang Beach provides ample dining and entertainment options. The area
+					is also renowned for its water sports, including jet skiing, parasailing, and banana boat rides,
+					making
+					it a lively hub for both relaxation and adventure.</p>
+			</div>
+		</div>
+	</section>
+
+	<section id="EagleSquare">
+		<h1>Eagle Square</h1>
+		<div class="place-description">
+			<div class="image-space">
+				<img src="images/Kedah/kedahEagle.jpg" alt="Eagle Square">
+			</div>
+			<div class="description-container">
+				<p>Eagle Square, located in the heart of Abuja, Nigeria's capital, is a striking public space renowned
+					for its grandiose design and monumental sculptures. The square features an impressive display of
+					two giant eagle statues, symbolizing strength and unity, perched on large pedestals that face the
+					entrance. The surrounding area is beautifully landscaped, with wide, open spaces and well-maintained
+					gardens, offering a scenic and peaceful environment. Eagle Square is often used for official
+					ceremonies,
+					national celebrations, and public events, reflecting the nation's pride and cultural heritage.</p>
+			</div>
+		</div>
+	</section>
+
+	<section id="WatLampam">
+		<h1>Wat Lampam</h1>
+		<div class="place-description">
+			<div class="image-space">
+				<img src="./images/Kedah/kedahWatlampam.jpg" alt="Wat Lampam">
+			</div>
+			<div class="description-container">
+				<p>Wat Lampam, also known as the White Temple, is located in Alor Setar, Kedah. It is a beautifully
+					intricate Buddhist temple that features several meticulously maintained buildings. The temple is
+					significant to the local Siamese population and provides a serene environment for visitors, who
+					are required to remove their shoes before entering. The temple grounds offer an opportunity to
+					interact with animals and enjoy the peaceful surroundings. Entry to Wat Lampam is free, making it
+					an accessible and inviting destination for those exploring the cultural and religious sites in
+					Kedah.</p>
+			</div>
+		</div>
+	</section>
+
+	<section id="AlorSetarTower">
+		<h1>Alor Setar Tower</h1>
+		<div class="place-description">
+			<div class="image-space">
+				<img src="images/Kedah/kedahTower.jpg" alt="Alor Setar Tower">
+			</div>
+			<div class="description-container">
+				<p>The Alor Setar Tower, located in Alor Setar, Kedah, Malaysia, is a striking telecommunications and
+					observation tower renowned for its modern design and panoramic views. Standing at 165.5 meters, it
+					is the tallest structure in Malaysia's northern region. The tower features a sleek, futuristic
+					appearance with a glass-paneled observation deck that offers sweeping vistas of the surrounding
+					landscape, including the Andaman Sea on clear days. In addition to its primary function as a
+					communications
+					hub, the Alor Setar Tower also houses a revolving restaurant and provides visitors with a unique
+					vantage
+					point to experience the region's natural beauty and urban landscape.</p>
+			</div>
+		</div>
+	</section>
+
+	<br><br><br>
+
+	<section class="social_share">
+        <h2>Share This Page</h2>
+        <div class="social_icons">
+            <a href="" target="_blank" class="social_icon facebook" id="facebook" aria-label="Share on Facebook">
+                <i class="fa fa-facebook-official fa-lg"></i>
+            </a>
+            <a href="" target="_blank" class="social_icon twitter" aria-label="Share on Twitter">
+                <i class="fa fa-twitter fa-lg"></i>
+            </a>
+            <a href="" target="_blank" class="social_icon instagram" aria-label="Share on Instagram">
+                <i class="fa fa-instagram fa-lg"></i>
+            </a>
+            <a href="" class="social_icon email" aria-label="Share via Email">
+                <i class="fa fa-envelope fa-lg"></i>
+            </a>
+        </div>
+    </section>
+
+	<footer class="footer">
+		<div class="section__container footer__container">
+			<div class="footer__col">
+				<h3>Malaysia Unveiled</h3>
+				<p>
+					Welcome to Malaysia Unveiled, your ultimate guide to the stunning landscapes and vibrant
+					History of Malaysia. From the breathtaking beaches of Langkawi to the lush rainforests of
+					Borneo, we showcase the natural beauty and rich heritage that make Malaysia a unique and
+					captivating destination. Dive into the heart of Malaysia and explore its wonders with us!
+
+				</p>
+			</div>
+
+			<div class="footer__col social-media">
+				<h4>Social Media</h4>
+				<p><a href="https://www.facebook.com/"><i class="fa fa-facebook-official"></i> Facebook</a></p>
+				<p><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i> Instagram</a></p>
+				<p><a href="http://www.x.com/"><i class="fa fa-twitter"></i> X </a></p>
+				<p><a href="https://www.youtube.com/"><i class="fa fa-youtube-play"></i>Youtube</a></p>
+			</div>
+
+			<div class="footer__col">
+				<h4>Places</h4>
+				<p><a href="Kedah.html">Kedah</a></p>
+				<p><a href="Penang.html">Penang</a></p>
+				<p><a href="Perlis.html">Perlis</a></p>
+				<p><a href="Perak.html">Perak</a></p>
+				<p><a href="Terengganu.html">Terengganu</a></p>
+			</div>
+
+			<div class="footer__col">
+				<p><a href="index.html">Home</a></p>
+				<p><a href="MalaysiaFood.html">Food</a></p>
+				<p><a href="MalaysiaFestival.html">Festival</a></p>
+				<p><a href="MalaysiaHistory.html">History</a></p>
+				<p><a href="MalaysiaGame.html">Games</a></p>
+			</div>
+		</div>
+		<div class="footer__bar">
+			Copyright © 2024 Malaysia Unveiled. All rights reserved.
+		</div>
+	</footer>
+
+	<script src="https://code.jquery.com/jquery-3.7.1.js"
+		integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/sidebar.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="js/share.js"></script>
+    <!--Script for facebook sharing-->
+    <script>(function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+		
+
+
+</body>
+
+</html>

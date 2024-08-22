@@ -1,0 +1,50 @@
+ /*Share social media*/
+ .social_share {
+    text-align: center;
+    margin: 3em 0;
+}
+
+.social_share h2 {
+    margin-bottom: 1em;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.social_icons {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.social_icon {
+    display: inline-block;
+    font-size: 1.5em;
+    color: #555;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.social_icon:hover {
+    color: #007bff;
+    transform: scale(1.1);
+}
+
+.facebook:hover {
+    color: #3b5998;
+}
+
+.twitter:hover {
+    color: #1da1f2;
+}
+
+.linkedin:hover {
+    color: #0077b5;
+}
+
+.instagram:hover {
+    color: #e4405f;
+}
+
+.email:hover {
+    color: #d44638;
+}

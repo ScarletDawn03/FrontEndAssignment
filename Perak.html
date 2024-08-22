@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!--Font Awesome CDN-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<title>Perak</title>
+
+	<link rel="stylesheet" href="./css/autoscroll.css">
+	<link rel="stylesheet" href="./css/state.css">
+	<link rel="stylesheet" href="css/share.css" />
+
+
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<!-- fonts style -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+	<!-- font wesome stylesheet -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/HP.css" />
+	<link rel="stylesheet" href="css/sidebar.css" />
+
+
+
+</head>
+
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-light">
+		<div class="nav__img"><a href="index.html"><img src="images/mainLogo.jpeg"></a></div>
+		<div id="mySidebar" class="sidebar">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+			<a href="index.html">Home</a>
+			<a href="aboutUs.html">About Us</a>
+			<a href="MalaysiaFood.html">Food</a>
+			<a href="MalaysiaGame.html">Games</a>
+			<a href="MalaysiaHistory.html">History</a>
+			<a href="MalaysiaFestival.html">Festival</a>
+			<a href="Kedah.html">Kedah</a>
+			<a href="Perlis.html">Perlis</a>
+			<a href="Penang.html">Penang</a>
+			<a href="Perak.html">Perak</a>
+			<a href="Terengganu.html">Terengganu</a>
+			<a href="loginPage.html">Login</a>
+		</div>
+
+		<div id="main">
+			<button class="openbtn" onclick="openNav()">☰</button>
+		</div>
+		<div class="collapse navbar-collapse" id="navbarNavDropdown">
+			<ul class="nav__links">
+				<li class="link "><a href="index.html">Home</a></li>
+				<li class="link"><a href="aboutUs.html">About Us</a></li>
+				<li class="link"><a href="MalaysiaFood.html">Food</a></li>
+				<li class="link"><a href="MalaysiaFestival.html">Festival</a></li>
+				<li class="link"><a href="MalaysiaHistory.html">History</a></li>
+				<li class="link"><a href="MalaysiaGame.html">Games</a></li>
+
+				<li class="nav-item dropdown link">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+						aria-haspopup="true" aria-expanded="false">
+						Places
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						<a class="dropdown-item" href="Kedah.html">Kedah</a>
+						<a class="dropdown-item" href="Penang.html">Penang</a>
+						<a class="dropdown-item" href="Perlis.html">Perlis</a>
+						<a class="dropdown-item" href="Perak.html">Perak</a>
+						<a class="dropdown-item" href="Terengganu.html">Terengganu</a>
+					</div>
+				</li>
+				<li class="link"><a href="loginPage.html">Login</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="state-container">
+		<div class="intro-container">
+			<div class="state-image">
+				<img class="img-fluid" src="images/Perak/perak.jpg" alt="Terengganu State" />
+			</div>
+			<div class="state-intro">
+				<h1 class="state-header">State of Perak</h1>
+				Perak, a state in northwestern Peninsular Malaysia, is renowned for its rich history and diverse
+				landscapes, ranging from mountainous regions to coastal areas. The state capital, Ipoh, boasts
+				historical architecture and a vibrant culinary scene, while Taiping is celebrated for its picturesque
+				lake gardens and historical significance as an early tin mining town. Key attractions include Kellie's
+				Castle, an unfinished historical site, and the Perak Cave Temples, which blend natural beauty with
+				cultural heritage. Perak’s blend of natural landscapes, cultural richness, and historical depth make it
+				a fascinating region to explore.
+			</div>
+		</div>
+	</div>
+
+	<br><br><br>
+
+	<div class="container">
+		<div class="slide">
+			<div class="item" style="background-image: url(images/Perak/perak1.jpg);">
+				<div class="content">
+					<div class="name">Lost World of Tambun</div>
+					<div class="des">The Lost World of Tambun is a popular theme park and resort located in Tambun, near
+						Ipoh, Perak.</div>
+					<button data-target="#LostWorldofTambun">See More</button>
+				</div>
+			</div>
+
+			<div class="item" style="background-image: url(images/Perak/perak2.jpeg);">
+				<div class="content">
+					<div class="name">Tempurung Cave</div>
+					<div class="des">Gua Tempurung, or Tempurung Cave, is a renowned cave system located near Kampar in
+						Perak, Malaysia.</div>
+					<button data-target="#TempurungCave">See More</button>
+				</div>
+			</div>
+
+			<div class="item" style="background-image: url(images/Perak/perak3.jpeg);">
+				<div class="content">
+					<div class="name">Kellie's Castle</div>
+					<div class="des">Kellie’s Castle, located near Ipoh in Perak, Malaysia, is a historic and enigmatic
+						structure known for its intriguing backstory and architectural features.</div>
+					<button data-target="#Kellie'sCastle">See More</button>
+				</div>
+			</div>
+
+			<div class="item" style="background-image: url(images/Perak/perak4.jpg);">
+				<div class="content">
+					<div class="name">Tua Pek Kong Temple</div>
+					<div class="des">Tua Pek Kong Temple in Sitiawan, Perak, Malaysia, is a prominent and historically
+						significant Chinese temple dedicated to Tua Pek Kong.</div>
+					<button data-target="#TuaPekKongTemple">See More</button>
+				</div>
+			</div>
+
+			<div class="item" style="background-image: url(images/Perak/perak5.jpg);">
+				<div class="content">
+					<div class="name">Sam Poh Tong Temple</div>
+					<div class="des">Sam Poh Tong Temple, located in Ipoh, Perak, Malaysia, is a renowned Buddhist
+						temple set within a natural limestone cave.</div>
+					<button data-target="#SamPohTongTemple">See More</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="button">
+			<button class="prev"><i class="fa fa-arrow-left"></i></button>
+			<button class="next"><i class="fa fa-arrow-right"></i></button>
+		</div>
+	</div>
+
+	<br><br><br><br>
+
+	<section id="LostWorldofTambun">
+		<h1>Lost World of Tambun</h1>
+		<div class="place-description">
+			<div class="image-space">
+				<img src="images/Perak/perakLostWorld.jpg" alt="Lost World of Tambun">
+			</div>
+			<div class="description-container">
+				<p>The Lost World of Tambun is a popular theme park and resort located in Tambun, near Ipoh, Perak.
+					It offers a variety of attractions and activities, including a water park, an amusement park, a
+					petting zoo, and adventure activities. The park is set against a backdrop of lush tropical forests
+					and limestone hills, providing a picturesque environment for visitors. It features a range of water
+					slides, wave pools, and hot springs, as well as themed areas such as the Lost World Hot Springs and
+					the Lost World Adventure. The park is designed for families and visitors of all ages, offering both
+					fun and relaxation in a unique setting.</p>
+			</div>
+		</div>
+	</section>
+
+	<section id="TempurungCave">
+		<h1>Tempurung Cave</h1>
+		<div class="place-description">
+			<div class="image-space">
+				<img src="images/Perak/peraktempurung.jpg" alt="Tempurung Cave">
+			</div>
+			<div class="description-container">
+				<p>Gua Tempurung, or Tempurung Cave, is a captivating natural wonder located near Kampar in Perak,
+					Malaysia.
+					Renowned for its grandeur and complexity, it is one of the largest cave systems in Peninsular
+					Malaysia,
+					featuring an extensive network of chambers and passageways adorned with striking limestone
+					formations.
+					Visitors can choose from various exploration tours, ranging from leisurely walks through well-lit
+					sections
+					to challenging adventure caving experiences that involve climbing, wading through streams, and
+					crawling
+					through narrow passages. The cave’s interior is a showcase of awe-inspiring stalactites,
+					stalagmites,
+					and unique rock formations, offering an immersive glimpse into the region’s geological history. With
+					its
+					dramatic underground scenery and the chance to experience subterranean landscapes, Gua Tempurung is
+					a
+					must-visit for nature enthusiasts and adventure seekers alike.</p>
+			</div>
+		</div>
+	</section>
+
+	<section id="Kellie'sCastle">
+		<h1>Kellie's Castle</h1>
+		<div class="place-description">
+			<div class="image-space">
+				<img src="images/Perak/perakKellieCastle.jpg" alt="Kellie’s Castle">
+			</div>
+			<div class="description-container">
+				<p>Kellie’s Castle, located near Ipoh in Perak, Malaysia, is a historic and enigmatic structure known
+					for its
+					intriguing backstory and architectural features. Built in the early 20th century by a Scottish
+					planter named
+					William Kellie Smith, the castle was intended as a grand residence for his family. However, the
+					construction
+					was never completed due to Smith’s untimely death and subsequent financial difficulties. The
+					partially
+					finished building combines elements of colonial and Moorish architecture, with its imposing façade,
+					spacious
+					halls, and intricate design details. The castle is surrounded by lush tropical greenery and has
+					become a popular
+					tourist attraction, offering visitors a glimpse into its mysterious past through guided tours and
+					exhibits.
+					Despite its unfinished state, Kellie’s Castle remains a striking and evocative landmark, captivating
+					visitors
+					with its historical charm and the stories that surround it.</p>
+			</div>
+		</div>
+	</section>
+
+	<section id="TuaPekKongTemple">
+		<h1>Tua Pek Kong Temple</h1>
+		<div class="place-description">
+			<div class="image-space">
+				<img src="./images/Perak/perakTemple.jpg" alt="Tua Pek Kong Temple">
+			</div>
+			<div class="description-container">
+				<p>Tua Pek Kong Temple in Sitiawan, Perak, Malaysia, is a prominent and historically significant Chinese
+					temple
+					dedicated to Tua Pek Kong, a revered deity known as the God of Prosperity and protector. Established
+					in the
+					early 20th century, the temple is an important cultural landmark for the local Chinese community. It
+					features
+					traditional Chinese architectural elements, including elaborate carvings, vibrant murals, and
+					intricate
+					decorations that reflect the temple's rich heritage. The temple is a center for various religious
+					and cultural
+					activities, including festivals such as Chinese New Year, attracting both devotees and visitors
+					interested in
+					exploring local traditions. Its role in community life and its distinctive architectural style make
+					Tua Pek Kong
+					Temple a notable attraction in Sitiawan.</p>
+			</div>
+		</div>
+	</section>
+
+	<section id="SamPohTongTemple">
+		<h1>Sam Poh Tong Temple</h1>
+		<div class="place-description">
+			<div class="image-space">
+				<img src="images/Perak/perakSamPoh.jpg" alt="Sam Poh Tong Temple">
+			</div>
+			<div class="description-container">
+				<p>Sam Poh Tong Temple, located in Ipoh, Perak, Malaysia, is a renowned Buddhist temple set within a
+					natural limestone
+					cave. Established in 1950, it is one of the most famous cave temples in the region, known for its
+					serene and
+					picturesque setting. The temple's name, which means "Three Buddha Hall Temple" in Cantonese,
+					reflects its dedication
+					to the Buddha and its three central Buddha statues. Visitors are often struck by the temple's unique
+					integration with
+					the surrounding limestone cave, which houses stunning stalactites and stalagmites. The temple
+					complex includes a
+					beautiful garden with koi ponds, a pagoda, and intricate carvings that add to its tranquil
+					atmosphere. Sam Poh Tong
+					Temple is not only a place of worship but also a popular tourist destination, offering a peaceful
+					retreat and a glimpse
+					into the rich Buddhist heritage of Malaysia.</p>
+			</div>
+		</div>
+	</section>
+
+	<br><br><br>
+
+	<section class="social_share">
+        <h2>Share This Page</h2>
+        <div class="social_icons">
+            <a href="" target="_blank" class="social_icon facebook" id="facebook" aria-label="Share on Facebook">
+                <i class="fa fa-facebook-official fa-lg"></i>
+            </a>
+            <a href="" target="_blank" class="social_icon twitter" aria-label="Share on Twitter">
+                <i class="fa fa-twitter fa-lg"></i>
+            </a>
+            <a href="" target="_blank" class="social_icon instagram" aria-label="Share on Instagram">
+                <i class="fa fa-instagram fa-lg"></i>
+            </a>
+            <a href="" class="social_icon email" aria-label="Share via Email">
+                <i class="fa fa-envelope fa-lg"></i>
+            </a>
+        </div>
+    </section>
+
+	<footer class="footer">
+		<div class="section__container footer__container">
+			<div class="footer__col">
+				<h3>Malaysia Unveiled</h3>
+				<p>
+					Welcome to Malaysia Unveiled, your ultimate guide to the stunning landscapes and vibrant
+					History of Malaysia. From the breathtaking beaches of Langkawi to the lush rainforests of
+					Borneo, we showcase the natural beauty and rich heritage that make Malaysia a unique and
+					captivating destination. Dive into the heart of Malaysia and explore its wonders with us!
+
+				</p>
+			</div>
+
+			<div class="footer__col social-media">
+				<h4>Social Media</h4>
+				<p><a href="https://www.facebook.com/"><i class="fa fa-facebook-official"></i> Facebook</a></p>
+				<p><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i> Instagram</a></p>
+				<p><a href="http://www.x.com/"><i class="fa fa-twitter"></i> X </a></p>
+				<p><a href="https://www.youtube.com/"><i class="fa fa-youtube-play"></i>Youtube</a></p>
+			</div>
+
+			<div class="footer__col">
+				<h4>Places</h4>
+				<p><a href="Kedah.html">Kedah</a></p>
+				<p><a href="Penang.html">Penang</a></p>
+				<p><a href="Perlis.html">Perlis</a></p>
+				<p><a href="Perak.html">Perak</a></p>
+				<p><a href="Terengganu.html">Terengganu</a></p>
+			</div>
+
+			<div class="footer__col">
+				<p><a href="index.html">Home</a></p>
+				<p><a href="MalaysiaFood.html">Food</a></p>
+				<p><a href="MalaysiaFestival.html">Festival</a></p>
+				<p><a href="MalaysiaHistory.html">History</a></p>
+				<p><a href="MalaysiaGame.html">Games</a></p>
+			</div>
+		</div>
+		<div class="footer__bar">
+			Copyright © 2024 Malaysia Unveiled. All rights reserved.
+		</div>
+	</footer>
+
+	<script src="https://code.jquery.com/jquery-3.7.1.js"
+		integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/sidebar.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="js/share.js"></script>
+    <!--Script for facebook sharing-->
+    <script>(function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+	
+
+
+</body>
+
+</html>

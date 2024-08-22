@@ -1,0 +1,24 @@
+svg {
+    width: 900px; 
+    height: auto; 
+    max-width: 100%; 
+    max-height: 100%; 
+    display: block; 
+    margin: 0 auto; 
+    transition: transform 0.3s ease-in-out; 
+    align-items: center;
+    
+}
+
+svg path {
+    fill: #00394f; 
+    stroke: #eee; 
+    stroke-width: 0.25; 
+    transition: fill 0.3s ease, transform 0.3s ease; 
+}
+
+svg path:hover {
+    fill: black; 
+    cursor: pointer; 
+    transform: scale(1.03); 
+}

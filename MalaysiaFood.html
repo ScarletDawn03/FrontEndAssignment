@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Malaysian Food</title>
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- fonts style -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+    <!-- font wesome stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/HP.css" />
+    <link rel="stylesheet" href="css/sidebar.css" />
+    <link rel="stylesheet" href="css/food.css" />
+    <link rel="stylesheet" href="css/share.css" />
+
+
+</head>
+
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-light">
+		<div class="nav__img"><a href="index.html"><img src="images/mainLogo.jpeg"></a></div>
+		<div id="mySidebar" class="sidebar">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+			<a href="index.html">Home</a>
+			<a href="aboutUs.html">About Us</a>
+			<a href="MalaysiaFood.html">Food</a>
+			<a href="MalaysiaGame.html">Games</a>
+			<a href="MalaysiaHistory.html">History</a>
+			<a href="MalaysiaFestival.html">Festival</a>
+			<a href="Kedah.html">Kedah</a>
+			<a href="Perlis.html">Perlis</a>
+			<a href="Penang.html">Penang</a>
+			<a href="Perak.html">Perak</a>
+			<a href="Terengganu.html">Terengganu</a>
+			<a href="loginPage.html">Login</a>
+		</div>
+
+		<div id="main">
+			<button class="openbtn" onclick="openNav()">☰</button>
+		</div>
+		<div class="collapse navbar-collapse" id="navbarNavDropdown">
+			<ul class="nav__links">
+				<li class="link "><a href="index.html">Home</a></li>
+				<li class="link"><a href="aboutUs.html">About Us</a></li>
+				<li class="link"><a href="MalaysiaFood.html">Food</a></li>
+				<li class="link"><a href="MalaysiaFestival.html">Festival</a></li>
+				<li class="link"><a href="MalaysiaHistory.html">History</a></li>
+				<li class="link"><a href="MalaysiaGame.html">Games</a></li>
+
+				<li class="nav-item dropdown link">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+						aria-haspopup="true" aria-expanded="false">
+						Places
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						<a class="dropdown-item" href="Kedah.html">Kedah</a>
+						<a class="dropdown-item" href="Penang.html">Penang</a>
+						<a class="dropdown-item" href="Perlis.html">Perlis</a>
+						<a class="dropdown-item" href="Perak.html">Perak</a>
+						<a class="dropdown-item" href="Terengganu.html">Terengganu</a>
+					</div>
+				</li>
+				<li class="link"><a href="loginPage.html">Login</a></li>
+			</ul>
+		</div>
+	</nav>
+
+
+    <!--Main-->
+    <section class="food_main">
+        <div class="content">
+            <h3>Malaysian Food</h3>
+            <p>
+                Malaysian food is a vibrant blend of diverse cultural influences, reflecting the country's multicultural
+                heritage. The cuisine combines Malay, Chinese, Indian, and indigenous traditions, resulting in
+                a rich tapestry of flavors, spices, and cooking techniques. Key dishes include Nasi Lemak (a fragrant
+                ricedishwith coconut milk, sambal, and accompaniments), Satay (grilled skewered meat with peanut
+                sauce),Laksa(aspicy noodle soup), and Roti Canai (a flaky, buttery flatbread). Malaysian food is known
+                for its use of aromatic spices, fresh herbs, and a balance of sweet, sour, salty, and spicy tastes. This
+                diverse cuisine not only showcases the country’s cultural diversity but also its culinary creativity.
+            </p>
+            <div class="food_btn">
+                <a href="#food">Explore Malaysian Food</a>
+            </div>
+        </div>
+
+        <div class="food_image">
+            <img src="images/Food/main.jpg" alt="Malaysian Food">
+        </div>
+    </section>
+
+    <!--Food-->
+
+    <section class="food" id="food">
+        <h1 class="heading"><span>Popular</span> Malaysian Food</h1>
+        <div class="food_buttons">
+            <button id="show_all">Show All Food</button>
+            <button id="filter_button">Show Favourites</button>
+        </div>
+        <div class="food_container" id="food_container">
+            <div class="food_box" data-id="nasilemakbox">
+                <div class="favourite_card">
+                    <i class="fa fa-heart fa-lg favourite" data-id="nasilemak"></i>
+                </div>
+                <img class="image" src="images/Food/nasilemak.jpg" alt="Nasi Lemak">
+                <div class="food_content" data-id="Nasi Lemak">
+                    <img src="images/Food/nasilemakicon.png" alt="Nasi Lemak Icon">
+                    <h3>Nasi Lemak</h3>
+                    <p>Nasi Lemak is one of Malaysia's most beloved and iconic dishes, often considered the national
+                        dish. At its core, Nasi Lemak consists of rice cooked in coconut milk, giving it a rich, creamy
+                        texture and a fragrant aroma.</p>
+                </div>
+            </div>
+            <div class="food_box" data-id="laksabox">
+                <div class="favourite_card">
+                    <i class="fa fa-heart fa-lg favourite" data-id="laksa"></i>
+                </div>
+                <img class="image" src="images/Food/laksa.jpg" alt="Laksa">
+                <div class="food_content" data-id="Laksa">
+                    <img src="images/Food/laksaicon.png" alt="Laksa Icon">
+                    <h3>Laksa</h3>
+                    <p>Laksa is a flavorful and aromatic noodle soup that is a popular dish in Malaysia, showcasing the
+                        country’s rich culinary diversity. There are several regional variations of Laksa, but they all
+                        share a common base of noodles, usually served in a spicy, tangy broth.</p>
+                </div>
+            </div>
+            <div class="food_box" data-id="sataybox">
+                <div class="favourite_card">
+                    <i class="fa fa-heart fa-lg favourite" data-id="satay"></i>
+                </div>
+                <img class="image" src="images/Food/satay.jpg" alt="Satay">
+                <div class="food_content" data-id="Satay">
+                    <img src="images/Food/satayicon.png" alt="Satay Icon">
+                    <h3>Satay</h3>
+                    <p>Satay is a popular Malaysian dish consisting of skewered and grilled meat, typically served with
+                        a rich, flavorful peanut sauce. The meat, often chicken, beef, or lamb, is marinated in a
+                        mixture of spices and herbs, including turmeric, coriander, cumin, and lemongrass, which gives
+                        it a distinctive and aromatic flavor.</p>
+                </div>
+            </div>
+            <div class="food_box" data-id="rendangbox">
+                <div class="favourite_card">
+                    <i class="fa fa-heart fa-lg favourite" data-id="rendang"></i>
+                </div>
+                <img class="image" src="images/Food/rendang.jpg" alt="Rendang">
+                <div class="food_content" data-id="Rendang">
+                    <img src="images/Food/rendangicon.png" alt="Rendang Icon">
+                    <h3>Rendang</h3>
+                    <p>Rendang is a rich and flavorful Malaysian dish renowned for its complex spices and
+                        slow-cooked tenderness. Traditionally, it is made with beef (though chicken and other meats can
+                        also be used) that is simmered in a mixture of coconut milk and a blend of spices until it
+                        becomes tender and deeply infused with flavor.</p>
+                </div>
+            </div>
+            <div class="food_box" data-id="charkueyteowbox">
+                <div class="favourite_card">
+                    <i class="fa fa-heart fa-lg favourite" data-id="charkueyteow"></i>
+                </div>
+                <img class="image" src="images/Food/charkueyteow.jpg" alt="Char Kuey Teow">
+                <div class="food_content" data-id="Char Kuey Teow">
+                    <img src="images/Food/charkueyteowicon.png" alt="Char Kuey Teow Icon">
+                    <h3>Char Kuey Teow</h3>
+                    <p>Char Kuey Teow is a beloved Malaysian stir-fried noodle dish, particularly popular in Penang. The
+                        dish features flat rice noodles (kuey teow) that are stir-fried over high heat with a mixture of
+                        ingredients, resulting in a smoky, savory flavor that is characteristic of this dish.</p>
+                </div>
+            </div>
+            <div class="food_box" data-id="roticanaibox">
+                <div class="favourite_card">
+                    <i class="fa fa-heart fa-lg favourite" data-id="roticanai"></i>
+                </div>
+                <img class="image" src="images/Food/roticanai.jpg" alt="Roti Canai">
+                <div class="food_content" data-id="Roti Canai">
+                    <img src="images/Food/roticanaiicon.png" alt="Roti Canai Icon">
+                    <h3>Roti Canai</h3>
+                    <p>Nasi Lemak is one of Malaysia's most beloved and iconic dishes, often considered the national
+                        dish. At its core, Nasi Lemak consists of rice cooked in coconut milk, giving it a rich, creamy
+                        texture and a fragrant aroma.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="read_more" id="read_more">
+        <h1 class="heading">Food <span>Description</span></h1>
+        <h2 id="instruction">Click on the food boxes to read more</h2>
+        <div class="food_desc">
+            <div class="image_container">
+                <img id="food_image" src="">
+            </div>
+            <div class="desc_container">
+                <h2 id="food_header"></h2>
+                <p id="description"></p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="social_share">
+        <h2>Share This Page</h2>
+        <div class="social_icons">
+            <a href="" target="_blank" class="social_icon facebook" aria-label="Share on Facebook">
+                <i class="fa fa-facebook-official fa-lg"></i>
+            </a>
+            <a href="" target="_blank" class="social_icon twitter" aria-label="Share on Twitter">
+                <i class="fa fa-twitter fa-lg"></i>
+            </a>
+            <a href="" target="_blank" class="social_icon instagram" aria-label="Share on Instagram">
+                <i class="fa fa-instagram fa-lg"></i>
+            </a>
+            <a href="" class="social_icon email" aria-label="Share via Email">
+                <i class="fa fa-envelope fa-lg"></i>
+            </a>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="section__container footer__container">
+            <div class="footer__col">
+                <h3>Malaysia Unveiled</h3>
+                <p>
+                    Welcome to Malaysia Unveiled, your ultimate guide to the stunning landscapes and vibrant
+                    History of Malaysia. From the breathtaking beaches of Langkawi to the lush rainforests of
+                    Borneo, we showcase the natural beauty and rich heritage that make Malaysia a unique and
+                    captivating destination. Dive into the heart of Malaysia and explore its wonders with us!
+
+                </p>
+            </div>
+
+            <div class="footer__col social-media">
+                <h4>Social Media</h4>
+                <p><a href="https://www.facebook.com/"><i class="fa fa-facebook-official"></i> Facebook</a></p>
+                <p><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i> Instagram</a></p>
+                <p><a href="http://www.x.com/"><i class="fa fa-twitter"></i> X </a></p>
+                <p><a href="https://www.youtube.com/"><i class="fa fa-youtube-play"></i>Youtube</a></p>
+            </div>
+
+            <div class="footer__col">
+                <h4>Places</h4>
+                <p><a href="Kedah.html">Kedah</a></p>
+                <p><a href="Penang.html">Penang</a></p>
+                <p><a href="Perlis.html">Perlis</a></p>
+                <p><a href="Perak.html">Perak</a></p>
+                <p><a href="Terengganu.html">Terengganu</a></p>
+            </div>
+
+            <div class="footer__col">
+                <p><a href="index.html">Home</a></p>
+                <p><a href="MalaysiaFood.html">Food</a></p>
+                <p><a href="MalaysiaFestival.html">Festival</a></p>
+                <p><a href="MalaysiaHistory.html">History</a></p>
+                <p><a href="MalaysiaGame.html">Games</a></p>
+            </div>
+        </div>
+        <div class="footer__bar">
+            Copyright © 2024 Malaysia Unveiled. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/sidebar.js"></script>
+    <script type="text/javascript" src="js/food.js"></script>
+    <script type="text/javascript" src="js/favourite.js"></script>
+    <script type="text/javascript" src="js/share.js"></script>
+
+    <!--Script for facebook sharing-->
+    <script>(function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+    
+
+</body>
+
+</html>

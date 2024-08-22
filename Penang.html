@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!--Font Awesome CDN-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<title>Penang</title>
+
+	<link rel="stylesheet" href="./css/autoscroll.css">
+	<link rel="stylesheet" href="./css/state.css">
+	<link rel="stylesheet" href="css/share.css" />
+
+
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<!-- fonts style -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+	<!-- font wesome stylesheet -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/HP.css" />
+	<link rel="stylesheet" href="css/sidebar.css" />
+
+
+
+</head>
+
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-light">
+		<div class="nav__img"><a href="index.html"><img src="images/mainLogo.jpeg"></a></div>
+		<div id="mySidebar" class="sidebar">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+			<a href="index.html">Home</a>
+			<a href="aboutUs.html">About Us</a>
+			<a href="MalaysiaFood.html">Food</a>
+			<a href="MalaysiaGame.html">Games</a>
+			<a href="MalaysiaHistory.html">History</a>
+			<a href="MalaysiaFestival.html">Festival</a>
+			<a href="Kedah.html">Kedah</a>
+			<a href="Perlis.html">Perlis</a>
+			<a href="Penang.html">Penang</a>
+			<a href="Perak.html">Perak</a>
+			<a href="Terengganu.html">Terengganu</a>
+			<a href="loginPage.html">Login</a>
+		</div>
+
+		<div id="main">
+			<button class="openbtn" onclick="openNav()">☰</button>
+		</div>
+		<div class="collapse navbar-collapse" id="navbarNavDropdown">
+			<ul class="nav__links">
+				<li class="link "><a href="index.html">Home</a></li>
+				<li class="link"><a href="aboutUs.html">About Us</a></li>
+				<li class="link"><a href="MalaysiaFood.html">Food</a></li>
+				<li class="link"><a href="MalaysiaFestival.html">Festival</a></li>
+				<li class="link"><a href="MalaysiaHistory.html">History</a></li>
+				<li class="link"><a href="MalaysiaGame.html">Games</a></li>
+
+				<li class="nav-item dropdown link">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+						aria-haspopup="true" aria-expanded="false">
+						Places
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						<a class="dropdown-item" href="Kedah.html">Kedah</a>
+						<a class="dropdown-item" href="Penang.html">Penang</a>
+						<a class="dropdown-item" href="Perlis.html">Perlis</a>
+						<a class="dropdown-item" href="Perak.html">Perak</a>
+						<a class="dropdown-item" href="Terengganu.html">Terengganu</a>
+					</div>
+				</li>
+				<li class="link"><a href="loginPage.html">Login</a></li>
+			</ul>
+		</div>
+	</nav>
+
+
+	<div class="state-container">
+		<div class="intro-container">
+			<div class="state-image">
+				<img class="img-fluid" src="images/Penang/penang.jpg" alt="Penang State" />
+			</div>
+			<div class="state-intro">
+				<h1 class="state-header">State of Penang</h1>
+				Penang, on Malaysia's northwest coast, is renowned for its vibrant cultural heritage and diverse
+				cuisine.
+				Its capital, George Town, a UNESCO World Heritage Site, is famous for its colonial architecture and
+				street
+				art. The island also offers beautiful beaches, bustling markets, and cultural landmarks, blending
+				historical
+				charm with modern attractions.
+			</div>
+		</div>
+	</div>
+
+	<br><br><br>
+
+	<div class="container">
+		<div class="slide">
+			<div class="item" style="background-image: url(images/Penang/penang1.jpg);">
+				<div class="content">
+					<div class="name">Penang Hill (Bukit Bendera)</div>
+					<div class="des">Penang Hill is a popular tourist destination located on Penang Island, Malaysia.
+					</div>
+					<button data-target="#PenangHill">See More</button>
+				</div>
+			</div>
+
+			<div class="item" style="background-image: url(images/Penang/penang2.jpg);">
+				<div class="content">
+					<div class="name">Kek Lok Si Temple</div>
+					<div class="des">Kek Lok Si Temple, located in George Town on Penang Island, Malaysia.</div>
+					<button data-target="#KekLokSiTemple">See More</button>
+				</div>
+			</div>
+
+			<div class="item" style="background-image: url(images/Penang/penang3.png);">
+				<div class="content">
+					<div class="name">Floating Mosque</div>
+					<div class="des">The Floating Mosque in Penang, officially known as Masjid Terapung Pulau Pinang.
+					</div>
+					<button data-target="#FloatingMosque">See More</button>
+				</div>
+			</div>
+
+			<div class="item" style="background-image: url(images/Penang/penang4.jpg);">
+				<div class="content">
+					<div class="name">Chulia Street Night Market</div>
+					<div class="des">Chulia Street Night Market, located in George Town, Penang, is a vibrant and
+						bustling market.</div>
+					<button data-target="#ChuliaStreetNightMarket">See More</button>
+				</div>
+			</div>
+
+			<div class="item" style="background-image: url(images/Penang/penang5.jpg);">
+				<div class="content">
+					<div class="name">Snake Temple</div>
+					<div class="des">The Snake Temple, or Wat Chaiya Mangkalaram, located in Penang, Malaysia.</div>
+					<button data-target="#SnakeTemple">See More</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="button">
+			<button class="prev"><i class="fa fa-arrow-left"></i></button>
+			<button class="next"><i class="fa fa-arrow-right"></i></button>
+		</div>
+	</div>
+
+	<br><br><br><br>
+
+	<section id="PenangHill">
+		<h1>Penang Hill (Bukit Bendera)</h1>
+		<div class="place-description">
+			<div class="image-space">
+				<img src="images/Penang/penangHill.jpg" alt="Penang Hill (Bukit Bendera)">
+			</div>
+			<div class="description-container">
+				<p>Penang Hill, located on Penang Island, Malaysia, is a renowned destination offering breathtaking
+					views
+					and a range of attractions. Rising 833 meters above sea level, it provides panoramic vistas of
+					George
+					Town, the mainland, and the surrounding islands. Visitors can reach the summit via a funicular
+					railway,
+					which offers a scenic ride through lush tropical forest. At the top, Penang Hill features several
+					attractions,
+					including the Sky Walk, which offers stunning views from a high observation deck, and the David
+					Brown's
+					Restaurant and Tea Terraces for dining. The hill also hosts cultural sites like the Kek Lok Si
+					Temple, a
+					prominent Buddhist temple, and the Penang Hill Clock Tower. The cooler climate and lush greenery
+					make it a
+					popular escape from the city, providing a blend of natural beauty, recreational activities, and
+					cultural
+					experiences.</p>
+			</div>
+		</div>
+	</section>
+
+	<section id="KekLokSiTemple">
+		<h1>Kek Lok Si Temple</h1>
+		<div class="place-description">
+			<div class="image-space">
+				<img src="images/Penang/penangTemple.jpg" alt="Kek Lok Si Temple">
+			</div>
+			<div class="description-container">
+				<p>
+					Kek Lok Si Temple, situated in George Town on Penang Island, Malaysia, stands as the largest
+					Buddhist
+					temple in the country and a prominent spiritual landmark. Established in 1890, it boasts a vast and
+					intricately designed complex that showcases a harmonious blend of traditional Chinese and
+					contemporary
+					architectural elements. The temple is renowned for its impressive pagodas, including the
+					seven-tiered
+					Pagoda of Ten Thousand Buddhas, detailed carvings, and the towering statue of the Goddess of Mercy,
+					Kuan Yin, symbolizing compassion. Visitors can explore various halls and pavilions dedicated to
+					Buddhist
+					deities, enjoy peaceful gardens, and take in panoramic views of the surrounding area. Kek Lok Si is
+					particularly notable during religious festivals, such as Chinese New Year, when it is illuminated by
+					thousands of lanterns and lights, creating a breathtaking spectacle.</p>
+			</div>
+		</div>
+	</section>
+
+	<section id="FloatingMosque">
+		<h1>Floating Mosque</h1>
+		<div class="place-description">
+			<div class="image-space">
+				<img src="images/Penang/penangFloatingMosque.jpg" alt="Floating Mosque">
+			</div>
+			<div class="description-container">
+				<p>The Floating Mosque, or Masjid Terapung Pulau Pinang, located in Tanjung Bungah on Penang Island,
+					Malaysia,
+					is renowned for its striking architectural design and serene setting. Built in 2005, the mosque
+					features a
+					modern style with a prominent white dome and minarets, elevated on stilts above the water, giving it
+					a
+					captivating floating appearance, especially during high tide. This mosque serves as a significant
+					religious
+					site for the local Muslim community and a popular attraction for visitors, offering panoramic views
+					of the
+					South China Sea. Its unique blend of contemporary design and traditional Islamic elements, along
+					with its
+					tranquil location, makes it a notable landmark and a peaceful place for reflection and worship.</p>
+			</div>
+		</div>
+	</section>
+
+	<section id="ChuliaStreetNightMarket">
+		<h1>Chulia Street Night Market</h1>
+		<div class="place-description">
+			<div class="image-space">
+				<img src="./images/Penang/penangChuliaStreet.jpg" alt="Chulia Street Night Market">
+			</div>
+			<div class="description-container">
+				<p>Chulia Street Night Market in George Town, Penang, is a lively evening destination known
+					for its vibrant atmosphere and diverse offerings. The market is famed for its array of
+					street food, showcasing Penang's rich culinary heritage with dishes like char kway teow
+					and satay. Stalls also sell a variety of goods, from handcrafted souvenirs to clothing
+					and accessories. The bustling street is illuminated by colorful lights, filled with the
+					aroma of delicious food and the sounds of vendors and shoppers. This dynamic market provides
+					a rich cultural experience and is a central spot for both local residents and visitors to
+					enjoy the lively street life of Penang.</p>
+			</div>
+		</div>
+	</section>
+
+	<section id="SnakeTemple">
+		<h1>Snake Temple</h1>
+		<div class="place-description">
+			<div class="image-space">
+				<img src="images/Penang/penangSnakeTemple.jpg" alt="Snake Temple">
+			</div>
+			<div class="description-container">
+				<p>The Snake Temple, or Wat Chaiya Mangkalaram, located in Penang, Malaysia, is a unique and
+					fascinating Buddhist temple renowned for its resident snakes and distinctive architecture.
+					Established in 1850, the temple is dedicated to Chor Soo Kong, a revered deity associated
+					with healing and protection. The temple's interior features a blend of traditional Buddhist
+					and Chinese design elements, including intricate carvings and vibrant murals. What sets the
+					Snake Temple apart is its living inhabitants—pit vipers and pythons that are often seen resting
+					among the temple’s incense smoke, creating an extraordinary and mystical atmosphere. The snakes
+					are considered sacred and are believed to bring good fortune. The temple’s serene setting,
+					combined with its unusual feature of snakes and rich cultural significance, makes it a notable
+					landmark and a compelling destination for those interested in unique religious and cultural
+					experiences.</p>
+			</div>
+		</div>
+	</section>
+
+	<br><br><br>
+
+	<section class="social_share">
+        <h2>Share This Page</h2>
+        <div class="social_icons">
+            <a href="" target="_blank" class="social_icon facebook" id="facebook" aria-label="Share on Facebook">
+                <i class="fa fa-facebook-official fa-lg"></i>
+            </a>
+            <a href="" target="_blank" class="social_icon twitter" aria-label="Share on Twitter">
+                <i class="fa fa-twitter fa-lg"></i>
+            </a>
+            <a href="" target="_blank" class="social_icon instagram" aria-label="Share on Instagram">
+                <i class="fa fa-instagram fa-lg"></i>
+            </a>
+            <a href="" class="social_icon email" aria-label="Share via Email">
+                <i class="fa fa-envelope fa-lg"></i>
+            </a>
+        </div>
+    </section>
+
+	<footer class="footer">
+		<div class="section__container footer__container">
+			<div class="footer__col">
+				<h3>Malaysia Unveiled</h3>
+				<p>
+					Welcome to Malaysia Unveiled, your ultimate guide to the stunning landscapes and vibrant
+					History of Malaysia. From the breathtaking beaches of Langkawi to the lush rainforests of
+					Borneo, we showcase the natural beauty and rich heritage that make Malaysia a unique and
+					captivating destination. Dive into the heart of Malaysia and explore its wonders with us!
+
+				</p>
+			</div>
+
+			<div class="footer__col social-media">
+				<h4>Social Media</h4>
+				<p><a href="https://www.facebook.com/"><i class="fa fa-facebook-official"></i> Facebook</a></p>
+				<p><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i> Instagram</a></p>
+				<p><a href="http://www.x.com/"><i class="fa fa-twitter"></i> X </a></p>
+				<p><a href="https://www.youtube.com/"><i class="fa fa-youtube-play"></i>Youtube</a></p>
+			</div>
+
+			<div class="footer__col">
+				<h4>Places</h4>
+				<p><a href="Kedah.html">Kedah</a></p>
+				<p><a href="Penang.html">Penang</a></p>
+				<p><a href="Perlis.html">Perlis</a></p>
+				<p><a href="Perak.html">Perak</a></p>
+				<p><a href="Terengganu.html">Terengganu</a></p>
+			</div>
+
+			<div class="footer__col">
+				<p><a href="index.html">Home</a></p>
+				<p><a href="MalaysiaFood.html">Food</a></p>
+				<p><a href="MalaysiaFestival.html">Festival</a></p>
+				<p><a href="MalaysiaHistory.html">History</a></p>
+				<p><a href="MalaysiaGame.html">Games</a></p>
+			</div>
+		</div>
+		<div class="footer__bar">
+			Copyright © 2024 Malaysia Unveiled. All rights reserved.
+		</div>
+	</footer>
+
+	<script src="https://code.jquery.com/jquery-3.7.1.js"
+		integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/sidebar.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="js/share.js"></script>
+    <!--Script for facebook sharing-->
+    <script>(function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+	
+
+
+</body>
+
+</html>

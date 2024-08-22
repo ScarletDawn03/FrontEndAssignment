@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    color:whitesmoke;
+}
+
+#Drawbridge h1 {
+    margin-top: 20px; 
+}
+
+#Perhentian h1 {
+    margin-top: 20px; 
+}
+
+#Redang h1 {
+    margin-top: 20px; 
+}
+
+#Chinatown h1 {
+    margin-top: 20px; 
+}
+
+#Mosque h1 {
+    margin-top: 20px; 
+}

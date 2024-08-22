@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6em;
+}
+
+body{
+    background: #ffffff;
+}
+
+section{
+    padding: 0.25em 9%;
+    margin: 0;
+}
+
+.food_main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.food_main .content{
+    flex: 1 1 20em;
+    padding-top: 2em;
+}
+
+.food_main .image{
+    flex: 1 1 20em;
+    width: 100%;
+}
+
+.food_main .image img{
+    width: 100%;
+    padding: 1em;
+}
+
+.food_main .content h3{
+    font-size: 3em;
+    color: #333;
+}
+
+.food_main .content p{
+    font-size: 1.1em;
+    color: #333;
+    padding: 1em 0;
+}
+
+.food_btn a{
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #f15309;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    margin: 0em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    z-index: 2;
+}
+
+.food_btn a:hover {
+    background-color: #ca4507;
+    transform: scale(1.05);
+}
+
+.food_btn a:active {
+    background-color: #af3c07;
+    transform: scale(1);
+}
+
+
+
+/*Food*/
+
+.heading{
+    text-align: center;
+    font-size: 3em;
+    color: #333;
+}
+
+.heading span{
+    color: red;
+}
+
+.food .food_container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+}
+
+.food .food_container .food_box{
+    flex: 1 1 20em;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0.5em 1em rgba(0,0,0,0.1);
+    border: 0.1em solid rgba(0,0,0,0.3);
+    cursor: pointer;
+    border-radius: 0.5em;
+}
+
+.food .food_container .food_box .image{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.food .food_container .food_box .food_content{
+    text-align: center;
+    background: #ffff;
+    padding: 0.5em;
+}
+
+.food .food_container .food_box .food_content h3{
+    font-size: 1.7;
+    margin-top: 1em;
+    color: #333;
+}
+
+.food .food_container .food_box .food_content p{
+    font-size: 1.2em;
+    color: #333;
+    height: 100%;
+}
+
+.food .food_container .food_box:hover .food_content{
+    top: 0;
+}
+
+.food .food_container .food_box:hover .image{
+    transform: translateY(100%);
+}
+
+.food .food_container .food_box .food_content img{
+    height: 200px;
+    width: 200px;
+    margin: auto;
+}
+
+/*favourite*/
+.food_buttons{
+    margin: 1em;
+    text-align: center;
+}
+
+.food_buttons button{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f15309; /* Primary button color */
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 1em;
+}
+
+.food_buttons button:hover {
+    background-color: #ca4507; 
+}
+
+.food_buttons button:active {
+    background-color: #af3c07; 
+}
+
+.favourite_card{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.favourite_card .favourite{
+    margin: 1em;
+    color: pink; 
+}
+
+.favourite_card .favourite:hover{
+    color: red; 
+}
+
+.favourite_card .favourited{
+    color: red;
+}
+
+/*description*/
+.read_more{
+    margin: 2em;
+}
+
+#instruction{
+    text-align: center;
+    color:#333;
+}
+
+.food_desc{
+    width: 100%;
+    text-align: justify;
+    display: none;
+    flex-wrap: wrap;
+}
+
+.food_desc .desc_container{
+    flex: 1 1 20em;
+    width: 70%;
+}
+
+.food_desc .desc_container #food_header{
+    text-align: center;
+}
+
+.food_desc .image_container{
+    flex: 1 1 25em;
+    height: 400px;
+    width: 500px;
+    object-fit: cover;
+    margin: 2em;
+}
+
+.food_desc .image_container img{
+    height: 100%;
+    width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+    .food_main .content h3{
+        text-align: center;
+    }
+
+    .food_desc .image_container{
+        height: auto;
+        width: auto;
+    }
+
+    .food_box .image{
+        display: none;
+    }
+  }

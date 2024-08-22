@@ -1,0 +1,329 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+a{
+  text-decoration: none !important;
+}
+
+.background-description {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  color: white;
+  min-height: 100vh;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-image: url("../images/History/Malaya.jpg");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.background-description::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  /* Semi-transparent overlay */
+  z-index: 1;
+}
+
+.background-description h1,
+.background-description p {
+  position: relative;
+  z-index: 2;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  /* Text shadow */
+  margin: 0;
+  /* Reset margin for better control */
+}
+
+.background-description .btn {
+  position: relative;
+  z-index: 3;
+  /* Ensure button is above overlay */
+  margin-top: 20px;
+  /* Add some space around the button */
+  padding: 10px 20px;
+  /* Add padding for better button appearance */
+}
+
+/*Rubik google font*/
+.rubik-dirt-regular {
+  font-family: "Rubik Dirt", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  color: white;
+}
+
+.slider {
+  position: relative;
+  min-height: 100vh;
+  height: auto;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  height: 100%;
+}
+
+.slide {
+  min-width: 100%;
+  min-height: 100vh;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  overflow: hidden;
+}
+
+.text-center {
+  text-align: center;
+  /* Center text */
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.slide .col-lg-7 {
+  display: flex;
+  align-items: center;
+}
+
+.container-fluid p {
+  font-size: 1.5rem;
+}
+
+.slider p{
+  font-size: 1.5rem;
+}
+
+.races-section p{
+  font-size: 1.5rem;
+}
+
+.slider .container{
+  box-shadow: none;
+}
+
+.navigation {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  /* Full width of the slider */
+  display: flex;
+  justify-content: space-between;
+  /* Align arrows to left and right */
+  align-items: center;
+  /* Center arrows vertically */
+  pointer-events: none;
+  /* Allow pointer events on arrows only */
+}
+
+.navigation .arrow {
+  position: relative;
+  width: 60px;
+  /* Adjust width as needed */
+  height: 100%;
+  /* Full height of the column */
+  font-size: 2.5rem;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+  background-color: rgba(188, 188, 188, 0.3);
+  padding: 10px;
+  border-radius: 0;
+  /* Full height background with no rounded corners */
+  display: flex;
+  align-items: center;
+  /* Center arrow vertically */
+  justify-content: center;
+  /* Center arrow horizontally */
+  z-index: 1;
+  /* Ensure arrows are above the slides */
+  transition: background-color 0.3s ease;
+  /* Smooth background color transition */
+  pointer-events: auto;
+  /* Allow pointer events */
+}
+
+.navigation .arrow:hover {
+  background-color: rgba(138, 138, 138, 0.9);
+  /* Darker background on hover */
+}
+
+.indicators {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.indicators .dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: #bbb8b8;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.indicators .dot.active {
+  background-color: #271f1f;
+}
+
+.races-section {
+  min-height: 100vh;
+  height: auto;
+  overflow: hidden;
+  padding: 40px;
+  background-color:rgb(58, 35, 87);
+  position: relative;
+  color: white
+}
+
+.race-img{
+  transition: transform 0.4s ease;
+  transform-origin: 50% 50%;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.races-img-container {
+  position: relative;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.clickable:hover .race-img img {
+  transition: transform 1s ease;
+  object-fit: cover;
+  transform: scale(1.1);
+}
+
+.clickable:hover .text-center {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.description-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/History/Malaysia-races.jpg");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  color: white;
+  display: none; /* Hidden by default */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it is above other content */
+  text-align: center;
+}
+
+.description-overlay::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  /* Semi-transparent overlay */
+  z-index: 1;
+}
+
+.overlay-content {
+  max-width: 80%;
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 2;
+}
+
+.overlay-content p {
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.overlay-content button {
+  background-color: rgb(54, 96, 250);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.overlay-content button:hover {
+  background-color: rgb(16, 35, 206);
+}
+
+
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+  .background-description {
+    padding: 10px;
+    /* Adjust padding for smaller screens */
+  }
+
+  .background-description h1 {
+    font-size: 2rem;
+    /* Reduce font size on smaller screens */
+  }
+
+  .background-description p {
+    font-size: 1rem;
+    /* Reduce font size on smaller screens */
+  }
+
+  .slide h1 {
+    font-size: 1.5rem;
+  }
+
+  .slide p {
+    font-size: 0.8rem;
+  }
+
+  .rubik-dirt-regular {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .navigation .arrow:hover {
+    background-color: rgba(188, 188, 188, 0.3);
+    /* Darker background on hover */
+  }
+}

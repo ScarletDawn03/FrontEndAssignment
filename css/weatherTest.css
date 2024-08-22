@@ -1,0 +1,32 @@
+
+.city-input {
+    margin-top: 2rem;
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 3px;
+    max-width: 100%; 
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 10px ;
+    font-size: 18px;
+    cursor: pointer;
+    width:100px;
+}
+
+
+h5 {
+    color: red;
+    margin-top: 1rem;
+}
+
+.weather_description {
+    color: black;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+}
